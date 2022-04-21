@@ -1,14 +1,12 @@
-* body {
-    background: linear-gradient(90deg, rgba(128,234,235,0.9360119047619048) 0%, rgba(0,146,161,0.8491771708683473) 43%, rgba(40,58,167,0.8155637254901961) 73%);
-    background: rgb(128,234,235);
+body {
+    background: linear-gradient(45deg, rgba(228, 98, 240, 0.692) 0%, rgba(181, 231, 240, 0.849) 43%, rgba(223, 175, 235, 0.816) 73%);
     font-family: lagosta, cursive ;
 }
 
-.cabecalho__navegacao {
+.nav__bar {
     align-items: center;
-    background: linear-gradient(45deg, #6da8f5, #125175);
-    border-radius: 50%;
-    box-shadow: 10px 5px 10px 0 #6095ca;
+    background: linear-gradient(45deg, #dc8df0, #854f85);
+    /* box-shadow: 10px 5px 10px 0 #6095ca; */
     display: flex;
     flex-direction: row;
     height: 70px;
@@ -19,22 +17,19 @@
 }
 
 .navegacao__logo{
+    display: flex;
    font-weight: bold;
    font-size: 25px;
    text-transform: uppercase;
 }
 
-.navegacao__menu {
-    display: flex;
-}
-
-.menu__items {
+.menu__items, .navegacao__menu {
     display: flex;
     
 }
 
 .list__items {
-    padding-left: 1em;
+    padding-left: 2rem;
     font-weight: bold;
     text-transform: lowercase;
     font-size: 20px;
@@ -43,46 +38,67 @@
 
 .items__botao--acesso {
     color: antiquewhite;
+
 }
 
-.banner {
+.items__botao--acesso:hover {
+    font-size: 22px;
+}
+
+.items__botao--acesso:active {
+    color: black;
+}
+
+
+/* VIDEO E MOTIVOS DE ADOÇÃO */
+
+.container__video--lista {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+   /*  justify-content: space-between; */
+    padding: 0 4em;
+    margin: 2rem 0;
+    background: linear-gradient(45deg, rgba(207, 167, 205, 0.315), rgba(237, 151, 240, 0.281)) ;
+    border-radius: 100%;
+}
+
+.texto__video {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 35px;
+}
+
+.motivo__pet {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    width: 30rem;
+    height: 300px;
+    background: white;
+    border-radius: 50%;
 }
 
-.banner__imagem {
-    background-image: url(../img/cachorro-flock.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 1%;
-    position: relative;
-    height: 400px;
-    width: 0 auto;
-}
-
-.titulo__container {
-    margin-top: 1em;
-    padding: 1em 0;
-    width: 0 auto;
-    background: linear-gradient(70deg, rgb(91, 211, 241), rgb(184, 227, 238), rgb(130, 182, 189));
-    box-shadow: 5px 7px 8px 6px rgb(184, 227, 238);
-}
-
-.titulo__banner {
-    background-size: contain;
-    background-image: url(../img/76YS.gif);
-    color: rgb(0, 0, 0);
+.titulo__motivos {
+    font-size: 20px;
     font-weight: bold;
-    font-size: 50px;
-    text-align: center;
-   /*  justify-content: center; */
-    text-transform: uppercase;
-    width: 100% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    padding: 0 0 2rem 0;
+    
+}
+
+.lista__motivos {
+    align-self: center;
+    margin-left: 3rem;
+}
+
+.items__list {
+text-transform: lowercase;
+padding-bottom: 1em;
+list-style: disc;
 }
 
 .container__bichos {
@@ -91,6 +107,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 4em 0;
+    padding: 0 5rem;
+    width: 0 auto;
 }
 
 .cachorro, .gatos {
@@ -105,44 +123,29 @@
     /* justify-content: center; */
 } 
 
+.todosOsAnimais {
+width: 150px;
+height: 150px;
+background-size: cover;
+background-position: center;
+border-radius: 100%;
+margin-top:  5%;
+}
+
 .imagem__cahorro {
     background-image: url(../img/imagem2-pincher.jpg);
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 100%;
-    margin-top:  5%;
 }
 
 .imagem__cahorro2 {
     background-image: url(../img/imagem1.jpg);
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 100%;
-    margin-top:  5%;
 }
 
 .imagem__cahorro3 {
     background-image: url(../img/imagem3-manezin.webp);
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 100%;
-    margin-top:  5%;
 }
 
 .imagem__cahorro4 {
     background-image: url(../img/imagem4-amarelinho.webp);
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 100%;
-    margin-top:  5%;
 }
 
 .conteudo__cachorro, .conteudo__gato{
@@ -179,46 +182,23 @@
     color: white;
 }
 
+
 /* PARTE DESTINADA A ÁREA DOS GATOS */
 
 .imagem__gato {
     background-image: url(../img/gato3.jpg);
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 100%;
-    margin-top:  5%;
 }
 
 .imagem__gato2 {
     background-image: url(../img/gato2.html);
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 100%;
-    margin-top:  5%;
 }
 
 .imagem__gato3 {
     background-image: url(../img/gato5.jpg);
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 100%;
-    margin-top:  5%;
 }
 
 .imagem__gato4 {
     background-image: url(../img/gato4.webp);
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 100%;
-    margin-top:  5%;
 }
 
 .botao__gato:hover {
@@ -229,47 +209,6 @@
 .botao__gato:active {
     background: linear-gradient(50deg, rgb(63, 63, 233), rgb(238, 150, 150), rgb(233, 74, 74));
     color: white;
-}
-
-
-.container__video {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-   /*  justify-content: space-between; */
-    background: linear-gradient(45deg, rgb(165, 215, 228), rgb(88, 238, 243));
-    padding: 0 4em;
-    margin: 2em 0;
-}
-
-.texto__video {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 35px;
-}
-
-.motivo__pet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    height: 300px;
-}
-
-.titulo__motivos {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 2em;
-}
-
-.items__list {
-text-transform: lowercase;
-padding-bottom: 1em;
-list-style:disc;
 }
 
 
@@ -288,10 +227,6 @@ list-style:disc;
 
 }
 
-/* .texto__rodape {
-    
-} */
-
 .rodape__texto {
     align-items: center;
     text-align: center;
@@ -304,59 +239,77 @@ list-style:disc;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/logo-resilia.png);
-    width: 200px;
-    height: 50px;
+    width: 20rem;
+    height: 5rem;
     margin-right: 3em;
     
 }
-
-/*  @media (max-width: 400px) { 
-    .cabecalho__navegacao {
+@media screen and (max-width: 900px) {
+    .container__video--lista {
         flex-direction: column;
-        border-radius: 0;
-        height: 150px;
-        padding: 0;
+    }
+    .motivo__pet {
+        margin-top: 3em;
+    }
+}
+
+ @media screen and (max-width: 700px) {
+    .container__video--lista {
+        flex-direction: column;
+    }
+    .motivo__pet {
+        margin-top: 3em;
+    }
+ }
+    
+   
+@media screen and (max-width: 400px) {
+    .nav__bar {
+        flex-direction: column;
+        height: 120px;
         align-items: center;
-        width: 400px;
-        box-shadow: none;
+        justify-content: center;
+        padding: 0;
+        width: 0 auto;
     }
 
-    }
     .navegacao__logo {
         display: none;
     }
 
-    .menu__items {
-        flex-direction: column;
-        width: 0 auto;
-    }
-
-    .list__items {
-        padding-top: 1em;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-     .banner {
-        width: 400px;
-    }
-
-    .lista__motivos {
-        width: 300px ;
-    }
-
-    .titulo__banner {
-        font-size: 20px;
-    }
-
-    .container__video {
+    .navegacao__menu, .menu__items {
         flex-direction: column;
     }
 
+     .list__items{
+        flex-direction: column;
+        padding-bottom: 1rem ;
+    }
+
+    .container__video--lista {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
     .video {
-        width: 390px;
+        width:22rem;
     }
-} */
- 
 
+    .motivo__pet {
+        margin: 3rem 0 0 0;
+        width: 23rem;
+    }
+    .lista__motivos {
+        width: 20rem;
+    }
 
+    .rodape {
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .imagem__rodape {
+        display: none;
+    }
+}
