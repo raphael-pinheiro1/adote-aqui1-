@@ -1,7 +1,7 @@
 # Adote Aqui
 ## Acesse o site aqui:
 <ul>
-    <li>https://adoteaqui55241.netlify.app/</li>
+    <li>https://guileless-jalebi-0cd42f.netlify.app/</li>
 </ul>
 
 ## Objetivo: 
